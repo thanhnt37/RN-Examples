@@ -28,6 +28,8 @@ class ToDoLists extends Component {
     }
 
     render() {
+        const { items } = this.props;
+
         return (
             <Container>
                 <Header style={{backgroundColor: "blue"}}>
