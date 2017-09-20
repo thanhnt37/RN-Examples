@@ -8,11 +8,12 @@ export default function (state = initialState, action = {}) {
     switch (action.type) {
         case types.ADD_NEW_TASK:
             return {
-                data: [...state.data, action.data]
+                // data: [...state.data, action.data],
+                data: state.data.concat(action.data)
             };
         default:
             return {
-                data: [...state.data]
+                data: state.data
             };
     }
 }
